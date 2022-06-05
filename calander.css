@@ -1,0 +1,159 @@
+/* common style */
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* main container */
+.wrapper {
+    height: 100vh;
+    width: 100wh;
+    background-color: rgb(195, 189, 189);
+    display: flex;
+}
+
+/* calander container */
+.calander {
+    margin: auto;
+    width: 600px;
+    height: auto;
+    background: rgb(244, 241, 241);
+    box-shadow: 0px 0px 13px 3px rgba(0, 0, 0, 1);
+}
+
+/* mode btn style */
+#modeBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(117, 115, 115);
+    text-align: center;
+    padding-top: 5px;
+}
+
+#light,
+#dark {
+    cursor: pointer;
+    height: 41px;
+    width: 50px;
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+    color: white;
+    padding: 8px 2px 5px 0px;
+    transition: all .8s ease-in-out;
+}
+
+#light {
+    display: none;
+}
+
+/* mode btn style end*/
+
+
+/* month div style */
+.month {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(117, 115, 115);
+    text-align: center;
+    padding: 30px 20px;
+    color: rgb(225, 216, 216);
+}
+
+#month {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* month div style end*/
+
+
+/* week div style */
+.week {
+    display: flex;
+    color: rgb(225, 216, 216);
+    justify-content: space-around;
+    background-color: rgb(103, 101, 101);
+    padding: 10px 0px;
+    text-align: center;
+}
+
+/* week div style end */
+
+
+/* prev & next btn style */
+.prev,
+.next {
+    cursor: pointer;
+    height: 41px;
+    width: 41px;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in-out;
+
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+/* prev & next btn style end*/
+
+
+
+/* dates div style */
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: 300;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.date-num {
+    width: 14.28%;
+    margin-bottom: 10px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    padding: 20px 0px;
+}
+
+.date-num:hover {
+    background-color: rgb(210, 204, 204);
+    color: gray;
+}
+
+.today {
+    background-color: grey;
+    color: #fff;
+}
+
+.prev-date {
+    color: rgb(150, 143, 143);
+}
+
+/* dates div style end */
+
+
+
+/* add note div style */
+.note {
+    margin-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(100, 98, 98);
+    background-color: rgb(200, 200, 216);
+}
+
+/* add note div style end*/

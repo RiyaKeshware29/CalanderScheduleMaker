@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calander Schedule Maker Using js Prompt box</title>
+
+    <!-- include calander.css  -->
+    <link rel="stylesheet" href="calander.css">
+</head>
+
+<!--render function on load  -->
+
+<body onload="renderDate()">
+
+    <!-- Main cintainer -->
+    <div class="wrapper">
+
+        <!-- Calander Container -->
+        <div class="calander">
+
+            <!-- mode enable -->
+            <div id="modeBtn">
+                <div id="light"><span>&#9788;</span></div>
+                <div id="dark"><span>&#9789;</span></div>
+            </div>
+
+
+            <!-- Month div -->
+            <div class="month">
+
+                <!-- prev btn -->
+                <div class="prev" onclick="moveDate('prev')">
+                    <span>&#10094</span>
+                </div>
+
+                <!-- month name -->
+                <div class="month-name">
+                    <h2 id="month">June</h2>
+                    <p id="date_str"></p>
+                </div>
+
+                <!-- next btn -->
+                <div class="next" onclick="moveDate('next')">
+                    <span>&#10095</span>
+                </div>
+            </div>
+            <!-- Month div end -->
+
+            <!-- week div -->
+            <div class="week">
+                <div class="week-days">Sun</div>
+                <div class="week-days">Mon</div>
+                <div class="week-days">Tue</div>
+                <div class="week-days">Wed</div>
+                <div class="week-days">thu</div>
+                <div class="week-days">Fri</div>
+                <div class="week-days">Sat</div>
+            </div>
+            <!-- week div end  -->
+
+            <!-- date div -->
+            <div class="dates">
+                <!-- printing dates by js -->
+            </div>
+            <!-- date div end -->
+
+        </div>
+        <!-- calander div end -->
+
+    </div>
+    <!-- wrapper div end -->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- include calander.js -->
+    <script src="calander.js"></script>
+</body>
+
+</html>
